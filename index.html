@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css?family=Balsamiq+Sans:400,700&display=swap&subset=cyrillic" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+<body>
+    <section class="homework">
+        <h1>Homework 24 Cicles</h1>
+        <div class="task">
+            <h2>Task 1</h2>
+            <p class="task__condition">Подсчитать сумму всех чисел в заданном пользователем диапазоне.</p>
+            <input type="number" class="task__value" placeholder="Укажите первое число диапазона">
+            <input type="number" class="task__value" placeholder="Укажите второе число диапазона">
+            <button class="task__trigger">Click for answer</button>
+            <p class="task__answer"></p>
+        </div>
+        <div class="task">
+            <h2>Task 2</h2>
+            <p class="task__condition">Запросить 2 числа и найти только наибольший общий делитель.</p>
+            <input type="number" class="task__value" placeholder="Укажите первое число">
+            <input type="number" class="task__value" placeholder="Укажите второе число">
+            <button class="task__trigger">Click for answer</button>
+            <p class="task__answer"></p>
+        </div>
+        <div class="task">
+            <h2>Task 3</h2>
+            <p class="task__condition">Запросить у пользователя число и вывести все делители этого числа.</p>
+            <input type="number" class="task__value" placeholder="Введите целое число">
+            <button class="task__trigger">Click for answer</button>
+            <p class="task__answer"></p>
+        </div>
+        <div class="task">
+            <h2>Task 4</h2>
+            <p class="task__condition">Определить количество цифр в введенном числе.</p>
+            <input type="number" class="task__value" placeholder="Введите целое число">
+            <button class="task__trigger">Click for answer</button>
+            <p class="task__answer"></p>
+        </div>
+        <div class="task">
+            <h2>Task 5</h2>
+            <p class="task__condition">Запросить у пользователя 10 чисел и подсчитать, сколько он ввел положительных, отрицательных и нулей. При этом также посчитать, сколько четных и нечетных. Вывести статистику на экран. Учтите, что достаточно одной переменной (не 10) для ввода чисел пользователем.</p>
+            <input type="text" class="task__value" placeholder="Введите 10 целых чисел через пробел">
+            <button class="task__trigger">Click for answer</button>
+            <p class="task__answer"></p>
+        </div>
+        <div class="task">
+            <h2>Task 6</h2>
+            <p class="task__condition">Зациклить калькулятор. Запросить у пользователя 2 числа и знак, решить пример, вывести результат и спросить, хочет ли он решить еще один пример. И так до тех пор, пока пользователь не откажется.</p>
+            <input type="text" class="task__value" placeholder="Введите вашу формулу состоящую исключительно из 2 целых чисел и знаков '*, /, +, -'">
+            <button class="task__trigger">Click for answer</button>
+            <p class="task__answer"></p>
+        </div>
+        <div class="task">
+            <h2>Task 7</h2>
+            <p class="task__condition">Запросить у пользователя число и на сколько цифр его сдвинуть. Сдвинуть цифры числа и вывести результат (если число 123456 сдвинуть на 2 цифры, то получится 345612).</p>
+            <input type="number" class="task__value" placeholder="Введите целое число для сдвига">
+            <input type="number" class="task__value" placeholder="Введите значение сдвига">
+            <button class="task__trigger">Click for answer</button>
+            <p class="task__answer"></p>
+        </div>
+        <div class="task">
+            <h2>Task 8</h2>
+            <p class="task__condition">Зациклить вывод дней недели таким образом: «День недели. Хотите увидеть следующий день?» и так до тех пор, пока пользователь нажимает OK.</p>
+            <input type="date" class="task__value">
+            <button class="task__trigger">Click for answer</button>
+            <p class="task__answer"></p>
+        </div>
+        <div class="task">
+            <h2>Task 9</h2>
+            <p class="task__condition">Вывести таблицу умножения для всех чисел от 2 до 9. Каждое число необходимо умножить на числа от 1 до 10.</p>
+            <button class="task__trigger">Click for answer</button>
+            <table class="task__answer"></table>
+        </div>
+        <div class="task">
+            <h2>Task 10</h2>
+            <p class="task__condition">Игра «Угадай число». Предложить пользователю загадать число от 0 до 100 и отгадать его следующим способом: каждую итерацию цикла делите диапазон чисел пополам, записываете результат в N и спрашиваете у пользователя «Ваше число > N, < N или == N?». В зависимости от того, что указал пользователь, уменьшаете диапазон. Начальный диапазон от 0 до 100, поделили пополам и получили 50. Если пользователь указал, что его число > 50, то изменили диапазон на от 51 до 100. И так до тех пор, пока пользователь не выберет == N.</p>
+            <p class="current-condition">Какое Ваше число поотношению к <span>50</span></p>
+            <select name="choose" id="select">
+                <option value="bigger">Больше?</option>
+                <option value="smaller">Меньше?</option>
+                <option value="equal">Равно?</option>
+            </select>
+            <button class="task__trigger">Click for answer</button>
+            <p class="task__answer"></p>
+        </div>
+    </section>
+
+    <script src="main.js"></script>
+</body>
+</html>
